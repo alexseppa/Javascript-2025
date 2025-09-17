@@ -8,3 +8,5 @@ if (confirm("Oletko opiskelija?") == true) {
 } else {
   text = "Valitettavasti tämä sivu on tarkoitettu vain opiskelijoille";
 }
+
+//comment
