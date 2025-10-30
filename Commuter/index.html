@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commuter Traffic App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Commuter Traffic App</h1>
+  <p>Valitse asema nähdäksesi reaaliaikaiset junatiedot (Digitraffic API)</p>
+
+  <div id="controls">
+    <input type="text" id="asemaInput" placeholder="Kirjoita aseman nimi..." oninput="suodataAsemat()">
+    <select id="asemaValinta" onchange="haeData(this.value)">
+      <option value="">Valitse asema</option>
+    </select>
+  </div>
+
+  <div id="tulokset">Ladataan asemalistaa...</div>
+
+  <script src="commuter.js"></script>
+</body>
+</html>
